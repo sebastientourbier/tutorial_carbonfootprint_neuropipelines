@@ -1,0 +1,17 @@
+name: neuropipelines-env
+
+channels:
+- conda-forge
+
+dependencies:
+- python=3.7.10
+- pip=21.0.1
+- datalad=0.14.0
+- notebook=6.4.6
+- git-annex=8.20211028 # Should be commented on MacOSX and installed via homebrew
+
+- pip:
+    - codecarbon[viz]==1.2.0
+    - nest-asyncio==1.5.1 # To allow use of datalad.api in jupyter notebook
+    - datalad-container==1.1.2
+    - datalad_neuroimaging==0.3.1
